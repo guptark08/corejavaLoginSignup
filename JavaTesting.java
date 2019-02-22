@@ -130,21 +130,7 @@ public class JavaTesting {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }
-//        try
-//        {
-//            connect();
-//            st=con.createStatement();
-//            rs=st.executeQuery("select * from emp where emailid='"+username+"' and passkey='"+passwrd+"'");
-//            if(!rs.next())
-//            {
-//                System.out.println("No such User in database");
-//            }
-//            else
-//            {
-//                System.out.println("Welcome " + rs.getString(1));
-//            }
-//        }       
+        }      
     }
 
     public void employeeView() {
@@ -228,7 +214,6 @@ public class JavaTesting {
 
     public void admin() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//        String admin = "admin", pass;
         String uadmin, upass;
         String sb1 = "admin";
         String nsb1;
@@ -256,29 +241,6 @@ public class JavaTesting {
         } else {
             System.out.println("admin not matched");
         }
-
-//        String admin = "admin", pass = "123";
-//        String uadmin, upass;
-//        System.out.println("Enter adminID:");
-//        uadmin = sc.nextLine();
-//
-//        if (uadmin.equals(admin)) {
-//            System.out.println("Enter pass:");
-//            upass = sc.nextLine();
-//            if (upass.equals(pass)) {
-//                System.out.println("Welcome Admin");
-//                adminViewDatabase();
-//                System.out.println("Enter 'exit'for Logout otherwise just enter 'no'");
-//                String exit = sc.next();
-//                if (exit.equals("no")) {
-//                    mainpart();
-//                }
-//            } else {
-//                System.out.println("Incorrect password");
-//            }
-//        } else {
-//            System.out.println("admin not matched");
-//        }
     }
 
     public static void main(String[] args) throws IOException {
